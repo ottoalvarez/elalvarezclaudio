@@ -1,0 +1,8 @@
+@use 'Variables';
+@use 'NavBar';
+
+body{
+    background-color: Variables.$primary-color;
+}
+
+

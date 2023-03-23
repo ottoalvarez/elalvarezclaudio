@@ -1,0 +1,57 @@
+@use 'Variables';
+
+.fkNavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 4rem;
+
+    &__column {
+        width: auto;
+        
+        &__brand {
+            width: auto;
+            height: 8rem;
+        }
+        
+        &__md-icon{
+            color: Variables.$secondary-color;
+        }
+        
+        &__md-icon:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.Menu{
+    background-color: Variables.$secondary-color;
+    // display: none;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 22rem;
+
+    &__row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__option{
+        color: Variables.$primary-color;
+        height: 4rem;
+    }
+
+    &__option:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .fkNavBar{
+        margin: 1rem .4rem;
+    }
+}
